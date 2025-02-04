@@ -27,6 +27,7 @@ def recombine(left_arr, right_arr):
             merge_arr.append(left_arr[left_index])
             left_index += 1
         else:
+            # In case of equality, append the left array element first
             merge_arr.append(right_arr[right_index])
             right_index += 1
 

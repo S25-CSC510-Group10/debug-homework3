@@ -27,3 +27,4 @@ def test_merge_sort_3():
 
     # Compare and assert correct functionality
     assert compare_arr == hw2_debugging.merge_sort(test_arr)
+    
