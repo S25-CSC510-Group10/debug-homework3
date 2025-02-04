@@ -61,6 +61,11 @@ def bubble_sort(array):
     return array
 
 def selection_sort(arr):
+    """
+    Sorts a list with selection sort.
+    :param arr: the list of elements to sort
+    :return: a sorted list
+    """
     n = len(arr)
     for i in range(n):
         min_idx = i
@@ -68,7 +73,7 @@ def selection_sort(arr):
             if arr[j] < arr[min_idx]:
                 min_idx = j
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
-    return arr  
+    return arr
 
 def bogosort(list2):
     """
