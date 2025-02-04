@@ -20,4 +20,4 @@ jobs:
         pip install radon
     - name: Analysing the code with radon
       run: |
-        radon cc sympy/solvers/solvers.py -a -nc
+        radon cc raw mi hal hw2_debugging.py rand.py
