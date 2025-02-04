@@ -41,8 +41,8 @@ def bubble_sort(array):
         for j in range(0, n-i-1):
 
             # Swap if the element found is greater than the next element
-            if array[j] > array[j-1]:
-                array[j], array[j+1] = array[j-1], array[j]
+            if array[j] > array[j+1]:
+                array[j], array[j+1] = array[j+1], array[j]
 
     return array
 
