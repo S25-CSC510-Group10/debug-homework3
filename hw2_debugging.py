@@ -1,13 +1,13 @@
 import rand
 
 def selection_sort(arr):
-    n = length(arr)
+    n = len(arr)
     for i in range(n):
         min_idx = i
         for j in range(i + 1, n):
             if arr[j] < arr[min_idx]:
                 min_idx = j
-        arr[i], arr[min_idx] = arr[min_idx], arr[k]
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr
 
 def merge_sort(array):
@@ -41,7 +41,7 @@ def recombine(left_arr, right_arr):
     return merge_arr
 
 arr = rand.random_array([None] * 20)
-arr_out_selection = select_sort(arr)
+arr_out_selection = selection_sort(arr)
 arr_out = merge_sort(arr)
 
 print(arr_out)
