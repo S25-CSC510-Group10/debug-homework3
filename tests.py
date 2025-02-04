@@ -73,14 +73,14 @@ def test_merge_sort_7():
     test_arr = [5,7,3,6,4,2,1,8]
     compare_arr = [1,2,3,4,5,6,7,8]
     assert compare_arr == hw2_debugging.merge_sort(test_arr)
-    
+
 def test_merge_sort_8():
     """ Test with negative and positive numbers."""
     # Create static and manipulated arrays
     test_arr = [-1,7,0,6,3,2,1,8]
     compare_arr = [-1,0,1,2,3,6,7,8]
     assert compare_arr == hw2_debugging.merge_sort(test_arr)
-    
+
 def test_merge_sort_9():
     """ Test with only negative numbers."""
     # Create static and manipulated arrays
