@@ -1,14 +1,17 @@
 """Import the rand file to use randomization process"""
-# import rand
+
+import random
+
 
 def merge_sort(array):
     """Function performing merge sort algorithm"""
     if len(array) == 1:
         return array
 
-    half = len(array)//2
+    half = len(array) // 2
 
     return recombine(merge_sort(array[:half]), merge_sort(array[half:]))
+
 
 def recombine(left_arr, right_arr):
     """
@@ -41,6 +44,7 @@ def recombine(left_arr, right_arr):
 
     return merge_arr
 
+
 def bubble_sort(array):
     """Function performing bubble sort algorithm"""
     n = len(array)
@@ -48,11 +52,11 @@ def bubble_sort(array):
     # Traverse through all elements in the array
     for i in range(n):
         # Last i elements are already sorted
-        for j in range(0, n-i-1):
+        for j in range(0, n - i - 1):
 
             # Swap if the element found is greater than the next element
-            if array[j] > array[j+1]:
-                array[j], array[j+1] = array[j+1], array[j]
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
 
     return array
 
@@ -65,7 +69,33 @@ def selection_sort(arr):
                 min_idx = j
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr  
-  
+
+def bogosort(list2):
+    """
+    Sorts a list using the highly inefficient Bogosort algorithm.
+
+    :param array: List of elements to be sorted
+    :return: Sorted list
+    """
+    while is_sorted(list2):
+        random.shuffle(list2)
+    return list2
+
+
+def is_sorted(list2):
+    """
+    Checks if the list is sorted.
+
+    :param array: List to check
+    :return: True if sorted, False otherwise
+    """
+    prev = None
+    for x in list2:
+        if prev is not None and (prev > x):
+            return False
+        prev = x
+    return True
+
 # arr = rand.random_array([None] * 20)
 # arr_out = merge_sort(arr)
 # arr_out_bubble = bubble_sort(arr)
