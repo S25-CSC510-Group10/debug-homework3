@@ -5,7 +5,7 @@ name: Python application
 
 on:
   push:
-    branches: [ "main", "rcmcphee", "rcmcphee-testing" ]
+    branches: [ "main", "rcmcphee", "rcmcphee-testing", "hplenham" ]
   pull_request:
     branches: [ "main" ]
 
