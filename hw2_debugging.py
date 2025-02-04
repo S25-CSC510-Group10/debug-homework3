@@ -1,4 +1,4 @@
-# """Import the rand file to use randomization process"""
+"""Import the rand file to use randomization process"""
 # import rand
 
 def merge_sort(array):

@@ -1,8 +1,6 @@
-"""Used to test merge sort"""
-import hw2_debugging
-
 """Used to randomize test arrays"""
 import rand
+import hw2_debugging
 
 def test_merge_sort_1():
     """Test merge sort in first instance"""
