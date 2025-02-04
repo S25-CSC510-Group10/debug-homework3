@@ -7,5 +7,5 @@ def random_array(arr):
     for i in enumerate(arr):
         shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True,
                                       shell=True, check=False)
-        arr[i] = int(float(shuffled_num.stdout))
+        arr[i] = int(float(shuffled_num))
     return arr
