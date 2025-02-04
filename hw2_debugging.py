@@ -46,8 +46,8 @@ def bubble_sort(array):
 
     return array
 
-arr = rand.random_array([None] * 20)
-arr_out = merge_sort(arr)
-arr_out_bubble = bubble_sort(arr)
+# arr = rand.random_array([None] * 20)
+# arr_out = merge_sort(arr)
+# arr_out_bubble = bubble_sort(arr)
 
-print(arr_out)
+# print(arr_out)
