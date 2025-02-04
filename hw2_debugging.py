@@ -1,5 +1,5 @@
-"""Import the rand file to use randomization process"""
-import rand
+# """Import the rand file to use randomization process"""
+# import rand
 
 def merge_sort(array):
     """Function performing merge sort algorithm"""
