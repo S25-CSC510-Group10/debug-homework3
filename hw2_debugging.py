@@ -10,7 +10,6 @@ def selection_sort(arr):
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr
 
-
 def merge_sort(array):
     """Function performing merge sort algorithm"""
     if len(array) == 1:
@@ -44,6 +43,5 @@ def recombine(left_arr, right_arr):
 arr = rand.random_array([None] * 20)
 arr_out_selection = selection_sort(arr)
 arr_out = merge_sort(arr)
-
 
 print(arr_out)
