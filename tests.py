@@ -1,5 +1,4 @@
 """Used to randomize test arrays"""
-import rand
 import hw2_debugging
 
 def test_merge_sort_1():
