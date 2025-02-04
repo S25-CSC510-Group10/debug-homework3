@@ -22,9 +22,8 @@ def test_merge_sort_2():
 def test_merge_sort_3():
     """Test merge sort in third instance"""
     # Create correct and incorrect arrays
-    test_arr = [34,5,1,13,55,2,3,21,8]
+    test_arr = [34,5,1,13,55,2,3,1,21,8]
     compare_arr = [1,1,2,3,5,8,13,21,34,55]
 
     # Compare and assert correct functionality
     assert compare_arr == hw2_debugging.merge_sort(test_arr)
-    
