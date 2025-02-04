@@ -1,6 +1,6 @@
 """Import the rand file to use randomization process"""
 
-# import rand
+import random
 
 
 def merge_sort(array):
@@ -59,6 +59,33 @@ def bubble_sort(array):
                 array[j], array[j + 1] = array[j + 1], array[j]
 
     return array
+
+
+def bogosort(list2):
+    """
+    Sorts a list using the highly inefficient Bogosort algorithm.
+
+    :param array: List of elements to be sorted
+    :return: Sorted list
+    """
+    while is_sorted(list2):
+        random.shuffle(list2)
+    return list2
+
+
+def is_sorted(list2):
+    """
+    Checks if the list is sorted.
+
+    :param array: List to check
+    :return: True if sorted, False otherwise
+    """
+    prev = None
+    for x in list2:
+        if prev is not None and (prev > x):
+            return False
+        prev = x
+    return True
 
 
 # arr = rand.random_array([None] * 20)
